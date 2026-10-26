@@ -1,44 +1,49 @@
 # Estudos de Node.js 🚀
 
-Repositório dedicado aos estudos e projetos práticos de **Node.js para Iniciantes**, cobrindo desde os fundamentos da plataforma até a criação de APIs REST e integração com banco de dados.
+Módulo prático e aprofundado de estudos em **Node.js para Iniciantes**, focado no aprendizado da arquitetura do Node, seus módulos nativos essenciais, manipulação de streams, sistemas de arquivos, requisições HTTP e criação de APIs RESTful.
 
 ---
 
-## 📌 Conteúdo Programático & Progresso
+## 📌 Conteúdo Programático & Status
 
-- [x] **Módulo 1: Fundamentos do Node.js**
-  - O que é o Node.js e Event Loop
-  - Sistema de Módulos (CommonJS: `require` e `module.exports`)
-  - Classes e Orientação a Objetos no Node.js
-- [x] **Módulo 2: Módulos Nativos do Node.js**
-  - `path`: manipulação segura de caminhos e diretórios (`basename`, `dirname`, `extname`, `parse`, `join`)
-  - `fs` (File System): operações de arquivos e pastas (`mkdir`, `writeFile`, `appendFile`, `readFile`)
-  - Tratamento de operações assíncronas e callbacks
-- [ ] **Módulo 3: Servidor HTTP Nativo**
-  - Módulo `http`
-  - Criação de rotas, headers e responses
-- [ ] **Módulo 4: Express.js & APIs RESTful**
-  - Estruturação de rotas e middlewares
-  - Métodos HTTP (GET, POST, PUT/PATCH, DELETE)
-  - Envio e recebimento de parâmetros (`params`, `query`, `body`)
-- [ ] **Módulo 5: Banco de Dados & Persistência**
-  - Conexão e modelagem de dados (MongoDB / Mongoose)
-  - Operações completas de CRUD
+| Módulo | Tópicos Principais | Status |
+| :--- | :--- | :---: |
+| **01. Fundamentos & CommonJS** | Conceito de runtime, V8, Event Loop, `module.exports`, `require()` e POO com Classes | Concluído |
+| **02. Módulos Nativos (`path` & `fs`)** | `path.basename`, `dirname`, `extname`, `parse`, `join` e operações com `fs` (`mkdir`, `writeFile`, `appendFile`, `readFile`) | Concluído |
+| **03. Servidor HTTP Nativo** | Módulo `http`, criação de rotas sem frameworks, cabeçalhos e códigos de status | Em andamento |
+| **04. Express.js & REST APIs** | Middlewares, roteamento dinâmico, métodos HTTP (`GET`, `POST`, `PUT`, `DELETE`), payloads JSON | Próximo |
+| **05. Banco de Dados & CRUD** | Conexão com banco de dados (MongoDB / Mongoose), models, schemas e persistência | Próximo |
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## 🛠️ Tecnologias & Ferramentas Utilizadas
 
-- **Node.js**
-- **NPM** (Gerenciador de Pacotes)
-- **Nodemon** (Ambiente de desenvolvimento com Live Reload)
-- **Git & GitHub**
+* **Runtime:** [Node.js](https://nodejs.org/)
+* **Gerenciador de Pacotes:** NPM
+* **Dev Server:** [Nodemon](https://nodemon.io/) (recarregamento automático do servidor em desenvolvimento)
+* **Versionamento:** Git & GitHub
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## 📂 Estrutura do Projeto
 
-1. Clone o repositório ou navegue até o diretório:
+```text
+Curso_Node/
+├── modules/
+│   ├── fs.js          # Operações assíncronas do File System
+│   └── path.js        # Manipulação de caminhos e diretórios
+├── index.js           # Ponto de entrada (execução dos módulos e scripts)
+├── person.js          # Exemplo de criação de classe e exportação CommonJS
+├── package.json       # Manifesto de dependências e scripts NPM
+├── .gitignore         # Exclusão de node_modules e arquivos temporários
+└── README.md          # Esta documentação
+```
+
+---
+
+## 🚀 Como Executar Localmente
+
+1. Entre na pasta do curso:
    ```bash
    cd Curso_Node
    ```
@@ -48,23 +53,7 @@ Repositório dedicado aos estudos e projetos práticos de **Node.js para Inician
    npm install
    ```
 
-3. Inicie o ambiente de desenvolvimento:
+3. Inicie o servidor com live reload via Nodemon:
    ```bash
    npm run start:dev
    ```
-
----
-
-## 📂 Estrutura de Arquivos
-
-```text
-Curso_Node/
-├── modules/
-│   ├── fs.js          # Exemplos práticos do módulo File System
-│   └── path.js        # Exemplos práticos do módulo Path
-├── index.js           # Ponto de entrada da aplicação
-├── person.js          # Exemplo prático de classes e exports
-├── package.json       # Manifesto de dependências e scripts do projeto
-├── .gitignore         # Arquivos e pastas desconsiderados no versionamento
-└── README.md          # Documentação do projeto
-```
