@@ -1,7 +1,9 @@
-const { Person } = require('./person');
+// const { Person } = require('./person');
+// const person = new Person('Leonardo');
 
-// require('./modules/path.js')
-require("./modules/fs");
+// Módulos anteriores estudados (descomente para testar):
+// require('./modules/path');
+// require('./modules/fs');
 
-const person = new Person('Leonardo');
-
+// Módulo atual: Servidor HTTP Nativo
+require('./modules/http');
