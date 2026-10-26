@@ -1,9 +1,7 @@
-// const { Person } = require('./person');
-// const person = new Person('Leonardo');
+﻿const { Person } = require('./person');
 
-// Módulos anteriores estudados (descomente para testar):
-// require('./modules/path');
-// require('./modules/fs');
+const person = new Person('Leonardo');
 
-// Módulo atual: Servidor HTTP Nativo
-require('./modules/http');
+// Execução dos módulos fundamentais estudados
+require('./modules/path');
+require('./modules/fs');

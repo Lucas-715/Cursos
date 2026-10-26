@@ -6,11 +6,12 @@ O repositório é estruturado em modelo modular, onde cada tecnologia ou curso p
 
 ---
 
-## 🗂️ Cursos & Trilhas de Aprendizado
+## 🗂️ Cursos & Projetos
 
-| Diretório | Trilha / Curso | Foco Principal | Status |
+| Diretório | Trilha / Projeto | Foco Principal | Status |
 | :--- | :--- | :--- | :---: |
-| [📂 `Curso_Node`](./Curso_Node) | **Node.js Completo** | Fundamentos, Módulos Nativos, HTTP, Express e APIs RESTful | Em andamento |
+| [📂 `Curso_Node`](./Curso_Node) | **Fundamentos de Node.js** | CommonJS, POO, Módulos nativos (`path` e `fs`) | Concluído |
+| [📂 `Curso_Node_Servidor`](./Curso_Node_Servidor) | **Servidor Backend com Node & Express** | Servidor nativo (`http`), rotas, APIs REST e Express.js | Em andamento |
 
 ---
 
