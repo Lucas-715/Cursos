@@ -20,7 +20,7 @@ fs.mkdir(path.join(__dirname, '/test'), (error) => {
 
             console.log('Arquivo criado com sucesso!');
 
-            // 3. Adicionar conteúdo ao arquivo já existente
+            // 3. Adicionar conteúdo ao arquivo (garante que o arquivo já existe)
             fs.appendFile(
                 path.join(__dirname, '/test', 'test.txt'),
                 ' Hello World!',
@@ -31,7 +31,7 @@ fs.mkdir(path.join(__dirname, '/test'), (error) => {
 
                     console.log('Arquivo modificado com sucesso!');
 
-                    // 4. Ler o arquivo atualizado
+                    // 4. Ler o arquivo atualizado (garante que a escrita e a alteração terminaram)
                     fs.readFile(
                         path.join(__dirname, '/test', 'test.txt'),
                         'utf8',
